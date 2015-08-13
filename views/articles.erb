@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List of Articles</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>List of Articles</h1>
+      <ul>
+        <% articles.each do |article| %>
+        <li><%=article[0]%> <a href="<%=article[1]%>" target="_blank"><%=article[1]%></a></li>
+
+          <p><%=article[2]%></p>
+        <%end%>
+      </ul>
+    </div>
+  </body>
+</html>
