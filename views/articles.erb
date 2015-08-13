@@ -11,10 +11,12 @@
       <ul>
         <% articles.each do |article| %>
         <li><%=article[0]%> <a href="<%=article[1]%>" target="_blank"><%=article[1]%></a></li>
-
           <p><%=article[2]%></p>
         <%end%>
       </ul>
+    </div>
+    <div>
+        <a href="/articles/new">New article</a>
     </div>
   </body>
 </html>
